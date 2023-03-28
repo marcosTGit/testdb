@@ -9,7 +9,6 @@ db.authenticate()
     .then(()=>console.log('============     conectado a la BASE DE DATOS    ============='))
     .catch((error)=>console.log(error))
 
-
 // // // importando modelo
 // require('./models/Usuario');
 // db.sync()
@@ -19,21 +18,13 @@ db.authenticate()
 
 // //crear una app
 const app = express();
-// //cargar public
 
-
-
-// seteamos las sesiones ==> 2
 app.get("/", function (req, res) {
-	res.json({msj:"Hola buen dia"});
+	res.json({msj:"El Servidor esta en linea, conexion exitosa"});
 });
 
 
-
- 
-// const host=process.env.HOST || '0.0.0.0';
-// const port=process.env.PORT || 3000;
-
-    app.listen(process.env.PORT || 3000, ()=>{
-        console.log("SERVIDOR EN LINEA");
-    });
+// require('dotenv').config({path: 'var.env'})
+app.listen(process.env.PORT || 3000, ()=>{
+    console.log("SERVIDOR EN LINEA");
+});
