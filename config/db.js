@@ -14,7 +14,7 @@ const { Sequelize } = require('sequelize');
 // Option 2: Passing parameters separately (other dialects)
 // require('dotenv').config({path: 'var.env'})
 
-const db =new Sequelize('postgres://servicedb_3iva_user:yvHqeHcr5tlUavpPW70R1RblCoivEncO@dpg-cggr77hmbg5e1o0jjf5g-a.oregon-postgres.render.com/servicedb_3iva')
+const db =new Sequelize('postgres://servicedb_3iva_user:yvHqeHcr5tlUavpPW70R1RblCoivEncO@dpg-cggr77hmbg5e1o0jjf5g-a/servicedb_3iva')
 // const db =new Sequelize(
     
 //     process.env.DB_DATABASE, 
